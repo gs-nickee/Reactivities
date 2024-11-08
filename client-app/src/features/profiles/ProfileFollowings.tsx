@@ -15,7 +15,7 @@ export default observer(function ProfileFollowings() {
                     content={activeTab === 3? `People following ${profile?.displayName}` : 
                     `People ${profile?.displayName} is following`} />
                 </GridColumn>
-                <GridColumn widescreen={16}>
+                <GridColumn width={16}>
                     <Card.Group itemsPerRow={4}>
                         {followings.map(profile => (
                             <ProfileCard key={profile.username} profile={profile} />
